@@ -1,0 +1,175 @@
+<! DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>校园二手交易平台</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+
+<!-- 导航 -->
+<header class="navbar1">
+    <div class="nav-info">
+        <a href="#" class="username">zepuway</a>
+        <a href="myshelf.html" class="shelf">我的</a>
+        <a href="login.html" class="logout">[ 退 出 ]</a>
+    </div> <!-- nav-info -->
+    <form class="nav-search">
+        <a href=""><img class="logo" src="picture/logo2.png"></a>
+        <div class="search-form">
+            <a href="#" class="search-logo">| &nbsp;<img src="picture/search.png"></a>
+            <input type="search" class="searchIn" id="inp" placeholder="搜索所需商品">
+            <div class="searchBtn" id="but" style="line-height: 40px;">搜索</div>
+        </div>
+    </form><!--  nav-search -->
+    <ul class="menu">
+        <li><a class="active" href="">首页</a></li>
+        <li><a href="NewStore.html">全新区</a></li>
+        <li><a href="ask.html">求购区</a></li>
+        <li><a href="#"></a></li>
+    </ul>
+</header>
+
+<!-- 轮播 -->
+<div class="carousel">
+    <div class="book-guide">
+        <h4>商品导航</h4>
+        <ul class="book-class">
+            <li><a href="#">食品</a></li>
+            <li><a href="#">家居</a></li>
+            <li><a href="#">数码</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">服装</a></li>
+            <li><a href="#">鞋饰</a></li>
+            <li><a href="#">洗护</a></li>
+            <li><a href="#">箱包</a></li>
+        </ul>
+    </div>
+    <div class="slider">
+        <div class="slider-img">
+            <ul class="slider-img-ul">
+                <li><img src="picture/5.jpg"></li>
+                <li><img src="picture/12.jpg"></li>
+                <li><img src="picture/21.jpg"></li>
+                <li><img src="picture/3.png"></li>
+                <li><img src="picture/4.jpg"></li>
+                <li><img src="picture/5.jpg"></li>
+                <li><img src="picture/12.jpg"></li>
+            </ul>
+        </div>
+    </div><!-- 	slider -->
+</div><!-- carousel -->
+
+<!-- 商品分类 -->
+<div id="container">
+    <div class="book-part" id="article">
+        <h3 class="book-title"><a href="#">| 最新上架</a></h3>
+        <a class="more" href="#"> > > 更多</a>
+        <ul class="book-lists" id="xslist">
+            <li class="book-list">
+                <a href="#" class="book-pic">
+                    <img src="image/1.jpg">
+                </a>
+                <a href="#" class="book-info">
+                    <h5   class="name" th:text="${name1}"></h5>
+                    <span class="detail" th:text="${detail1}"></span>
+                    <span class="date" th:text="${time1}"></span>
+                    <span class="bname"th:text="${bname1}"></span>
+                </a>
+                <span class="price" th:text="${price1}">
+						<a href="bookDetail.html" class="book-buy">立即下单</a>
+                    </span>
+
+            </li>
+
+            <li class="book-list">
+                <a href="#" class="book-pic">
+                    <img src="image/2.jpg">
+                </a>
+                <a href="#" class="book-info">
+                <h5   class="name" th:text="${name2}"></h5>
+                <span class="detail" th:text="${detail2}"></span>
+                <span class="date" th:text="${time2}"></span>
+                <span class="bname"th:text="${bname2}"></span>
+            </a>
+                <span class="price" th:text="${price2}">
+						<a href="bookDetail.html" class="book-buy">立即下单</a>
+                    </span>
+
+            </li>
+
+            <li class="book-list">
+                <a href="#" class="book-pic">
+                    <img src="image/3.jpg">
+                </a>
+                <a href="#" class="book-info">
+                    <h5   class="name" th:text="${name3}"></h5>
+                    <span class="detail" th:text="${detail3}"></span>
+                    <span class="date" th:text="${time3}"></span>
+                    <span class="bname"th:text="${bname3}"></span>
+                </a>
+                <span class="price" th:text="${price3}">
+						<a href="bookDetail.html" class="book-buy">立即下单</a>
+                    </span>
+
+                </span>
+            </li>
+
+            <li class="book-list">
+                <a href="#" class="book-pic">
+                    <img src="image/4.jpg">
+                </a>
+                <a href="#" class="book-info">
+                    <h5   class="name" th:text="${name4}"></h5>
+                    <span class="detail" th:text="${detail4}"></span>
+                    <span class="date" th:text="${time4}"></span>
+                    <span class="bname"th:text="${bname4}"></span>
+                </a>
+                <span class="price" th:text="${price4}">
+						<a href="bookDetail.html" class="book-buy">立即下单</a>
+                    </span>
+
+            </li>
+
+            <li class="book-list">
+                <a href="#" class="book-pic">
+                    <img src="image/5.jpg">
+                </a>
+                <a href="#" class="book-info">
+                    <h5   class="name" th:text="${name5}"></h5>
+                    <span class="detail" th:text="${detail5}"></span>
+                    <span class="date" th:text="${time5}"></span>
+                    <span class="bname"th:text="${bname5}"></span>
+                </a>
+                <span class="price" th:text="${price5}">
+						<a href="bookDetail.html" class="book-buy">立即下单</a>
+                    </span>
+
+            </li>
+        </ul><!--  book-list end -->
+    </div><!--  book-part end -->
+
+</div><!--  book-part end -->
+</div> <!-- container end-->
+<footer>
+    <a href="#">©2022-2022 二手交易</a>
+    <a href="#">意见反馈&nbsp;&nbsp;&nbsp;联系我们&nbsp;&nbsp;&nbsp;隐私权声明&nbsp;&nbsp;&nbsp;使用条款</a>
+</footer>
+<script type="text/javascript" src="js/jquery-3.2.js"></script>
+<script type="text/javascript" src="js/xSlider.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+});
+
+
+
+
+
+</script>
+</body>
+
+</html>
